@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>MAMA</title>
+    <link rel="stylesheet" href="css/ress.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/listAdd.css">
+</head>
+
+<body>
+    <header>
+        <p id="backPage">
+            <a href="materialpage.php">
+                <img src="img/leftArrow.png" alt="戻る">
+            </a>
+        </p>
+        <h2>材料追加</h2>
+    </header>
+    <main>
+        <form action="php/mamaMeter.php" method="POST">
+            <div id="materialTextAdd">
+                <h3>材<span>料</span></h3>
+                <input id="metSearch" type="text" name="materName" placeholder="材料を入力してください">
+                <div id="materialSelect">
+                    <label class="radioBox" data-name="トマト" data-phonetic="とまと">
+                        <input type="radio" name="item" value="yasai,トマト,fooda">
+                        <span>トマト</span>
+                    </label>
+                    <label class="radioBox" 　data-name="キャベツ" data-phonetic="きゃべつ">
+                        <input type="radio" name="item" value="yasai,キャベツ,foodb">
+                        <span>キャベツ</span>
+                    </label>
+                    <label class="radioBox" data-name="トウモロコシ" data-phonetic="とうもろこし">
+                        <input type="radio" name="item" value="yasai,とうもろこし,foodc">
+                        <span>とうもろこし</span>
+                    </label>
+                    <label class="radioBox" data-name="タマネギ" data-phonetic="たまねぎ">
+                        <input type="radio" name="item" value="yasai,たまねぎ,foodd">
+                        <span>たまねぎ</span>
+                    </label>
+                    <label class="radioBox" data-name="キュウリ" data-phonetic="きゅうり">
+                        <input type="radio" name="item" value="yasai,きゅうり,foode">
+                        <span>きゅうり</span>
+                    </label>
+                    <label class="radioBox" data-name="ネギ" data-phonetic="ねぎ">
+                        <input type="radio" name="item" value="yasai,ねぎ,foodf">
+                        <span>ねぎ</span>
+                    </label>
+                    <label class="radioBox" data-name="ブロッコリー" data-phonetic="ぶろっこりー">
+                        <input type="radio" name="item" value="yasai,ブロッコリー,foodg">
+                        <span>ブロッコリー</span>
+                    </label>
+                    <label class="radioBox" data-name="人参" data-phonetic="にんじん">
+                        <input type="radio" name="item" value="yasai,にんじん,foodh">
+                        <span>にんじん</span>
+                    </label>
+                    <label class="radioBox" data-name="サンマ" data-phonetic="さんま">
+                        <input type="radio" name="item" value="sakan,さんま,foodi">
+                        <span>さんま</span>
+                    </label>
+                    <label class="radioBox" data-name="リンゴ" data-phonetic="りんご">
+                        <input type="radio" name="item" value="kudam,りんご,foodj">
+                        <span>りんご</span>
+                    </label>
+                    <label class="radioBox" data-name="ミカン" data-phonetic="みかん">
+                        <input type="radio" name="item" value="kudam,みかん,foodk">
+                        <span>みかん</span>
+                    </label>
+                    <label class="radioBox" data-name="豚バラ肉" data-phonetic="ぶたばらにく">
+                        <input type="radio" name="item" value="kudam,豚バラ肉,foodl">
+                        <span>豚バラ肉</span>
+                    </label>
+                    <label class="radioBox" data-name="牛肉" data-phonetic="ぎゅうにく">
+                        <input type="radio" name="item" value="nikuk,牛肉,foodm">
+                        <span>牛肉</span>
+                    </label>
+                </div>
+            </div>
+            <div id="timeSetting">
+                <h3>期<span>限</span></h3>
+                <div id="timeText">
+                    <label>
+                        <select id="yearsT" name="year" class="timeSetBox">
+                            <option value="2020">2020</option>
+                            <option value="2021">2021</option>
+                            <option value="2022">2022</option>
+                            <option value="2023">2023</option>
+                            <option value="2024">2024</option>
+                            <option value="2025">2025</option>
+                            <option value="2026">2026</option>
+                        </select>
+                        <p>年</p>
+                    </label>
+                    <label>
+                        <select id="monthT" name="month" class="timeSetBox">
+                            <option value="01">1</option>
+                            <option value="02">2</option>
+                            <option value="03">3</option>
+                            <option value="04">4</option>
+                            <option value="05">5</option>
+                            <option value="06">6</option>
+                            <option value="07">7</option>
+                            <option value="08">8</option>
+                            <option value="09">9</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+                        </select>
+                        <p>月</p>
+                    </label>
+                    <label>
+                        <select id="dayT" name="day" class="timeSetBox">
+                            <option value="01">1</option>
+                            <option value="02">2</option>
+                            <option value="03">3</option>
+                            <option value="04">4</option>
+                            <option value="05">5</option>
+                            <option value="06">6</option>
+                            <option value="07">7</option>
+                            <option value="08">8</option>
+                            <option value="09">9</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+                            <option value="13">13</option>
+                            <option value="14">14</option>
+                            <option value="15">15</option>
+                            <option value="16">16</option>
+                            <option value="17">17</option>
+                            <option value="18">18</option>
+                            <option value="19">19</option>
+                            <option value="20">20</option>
+                            <option value="21">21</option>
+                            <option value="22">22</option>
+                            <option value="23">23</option>
+                            <option value="24">24</option>
+                            <option value="25">25</option>
+                            <option value="26">26</option>
+                            <option value="27">27</option>
+                            <option value="28">28</option>
+                            <option value="29">29</option>
+                            <option value="30">30</option>
+                            <option value="31">31</option>
+                        </select>
+                        <p>日</p>
+                    </label>
+                </div>
+            </div>
+            <input type="submit" name="upLoad" id="upLoad" value="追加">
+        </form>
+    </main>
+    <footer>
+        <ul>
+            <li class="recipeNav">
+                <a href="index.php">
+                    <img src="img/recipeLmg.png" alt="">
+                    レシピ
+                </a>
+            </li>
+            <li class="searchNav">
+                <a href="search.php">
+                    <img src="img/searchLmg.png" alt="">
+                    検索
+                </a>
+            </li>
+            <li class="materialNav">
+                <a href="materialpage.php">
+                    <img src="img/metLmg.png" alt="">
+                    材料
+                </a>
+            </li>
+            <li class="listNav">
+                <a href="listpage.html">
+                    <img src="img/listLmg.png" alt="">
+                    リスト
+                </a>
+            </li>
+            <li class="mypageNav">
+                <a href="mypage.html">
+                    <img src="img/mypageLmg.png" alt="">
+                    マイページ
+                </a>
+            </li>
+        </ul>
+    </footer>
+    <script>
+        const searchWordText = document.querySelector('#metSearch');
+
+        const prefectureList = document.querySelectorAll('#materialSelect label');
+        searchWordText.addEventListener('keyup', () => {
+            const searchWord = searchWordText.value;
+            console.log(searchWord);
+            prefectureList.forEach((element) => {
+                if (!searchWord || searchWord === '') {
+                    element.classList.remove('hide');
+                    return;
+                }
+                const prefecturName = element.dataset.name;
+                const phonetics = element.dataset.phonetic;
+                if (searchWord.charAt(0) == phonetics.charAt(0) ||
+                    searchWord.charAt(0) == phonetics.charAt(0)
+                ) {
+                    element.classList.remove('hide');
+                } else {
+                    element.classList.add('hide');
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>

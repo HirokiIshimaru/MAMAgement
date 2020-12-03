@@ -1,0 +1,122 @@
+body,
+html {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  font-size: 62.5%;
+}
+
+header {
+  width: 100%;
+  height: 8%;
+  background: #F28662;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+}
+
+header #backPage {
+  position: absolute;
+  left: 3%;
+}
+
+header h2 {
+  color: white;
+}
+
+#userInfor {
+  width: 100%;
+  height: 82%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#userInfor #userIconName {
+  width: 100%;
+  height: 35%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#userInfor #userIconName p {
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin-top: 3%;
+  color: #080808;
+}
+
+#userInfor ul {
+  width: 100%;
+  height: 65%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#userInfor ul li {
+  width: 80%;
+  height: 30%;
+  padding: 0 10%;
+}
+
+#userInfor ul li a {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  text-decoration: none;
+}
+
+#userInfor ul li a span:nth-of-type(2) {
+  width: 65%;
+  font-size: 0.8rem;
+  color: #514F64;
+}
+
+#userInfor ul li a span:nth-of-type(3) {
+  color: #C2C4C5;
+  font-size: 0.9rem;
+}
+/*# sourceMappingURL=mypage.css.map */

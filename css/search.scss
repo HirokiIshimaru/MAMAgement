@@ -1,0 +1,120 @@
+body,
+html {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    font-size: 62.5%;
+}
+
+#searchBox {
+    width: 86%;
+    height: 5%;
+    margin: 5% auto;
+    border: 1px solid #BABABA;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    #searchOpen {
+        cursor: pointer;
+    }
+
+    input {
+        width: 80%;
+        height: 100%;
+        font-size: 0.8rem;
+    }
+}
+
+main {
+    width: 86%;
+    margin: auto;
+
+    #seasonContentBox {
+        width: 100%;
+        margin-bottom: 8%;
+
+        #seasonFoodBox {
+            width: 100%;
+            display: flex;
+            flex-wrap: nowrap;
+
+            .seasonFood {
+                font-size: 0.8rem;
+                padding: 2% 4%;
+                background-color: #F5A61C;
+                color: white;
+                margin-right: 5%;
+                border-radius: 1000px;
+            }
+        }
+    }
+
+    #myMaterialBox {
+        width: 100%;
+        margin: auto;
+
+        .myMaterial {
+            width: 100%;
+            height: 100px;
+            border: 1px #BABABA solid;
+            border-radius: 10px;
+            margin-bottom: 8%;
+
+            a {
+                width: 100%;
+                height: 100%;
+                display: flex;
+                align-items: center;
+                text-decoration: none;
+
+                .materialType {
+                    width: 20%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+
+                .materialText {
+                    width: 80%;
+                    height: 100%;
+                    display: flex;
+                    flex-direction: column;
+
+                    span {
+                        display: block;
+                        height: 65%;
+                        font-size: 1.2rem;
+                        color: #707070;
+                        display: flex;
+                        align-items: flex-end;
+                        font-weight: bold;
+
+                        &:nth-of-type(2) {
+                            height: 35%;
+                            font-size: 0.6rem;
+                            align-items: center;
+                            justify-content: flex-end;
+                            font-weight: normal;
+                            margin-right: 8%;
+
+                            img {
+                                margin-right: 2%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.subTema {
+    font-size: 1.2rem;
+    text-align: center;
+    margin-bottom: 4%;
+    color: #707070;
+}

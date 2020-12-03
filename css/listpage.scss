@@ -1,0 +1,237 @@
+body,
+html {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    font-size: 62.5%;
+}
+
+header {
+    width: 100%;
+    height: 8%;
+    background: #F28662;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+    #backPage {
+        position: absolute;
+        left: 3%;
+    }
+
+    h2 {
+        color: white;
+    }
+}
+
+main {
+    width: 100%;
+    margin: auto;
+
+    #listBox {
+        width: 86%;
+        margin: auto;
+
+        .checkList {
+            list-style: none;
+            height: 50px;
+            border-bottom: 1px #E0E0E0 solid;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+            position: relative;
+            transition: ease-in-out 0.2s;
+
+            .checkListText {
+                width: 100%;
+                height: 50px;
+                display: flex;
+                font-size: 0.8rem;
+                justify-content: space-between;
+                align-items: center;
+                border-bottom: 1px #E0E0E0 solid;
+                position: relative;
+                background: white;
+                z-index: 5;
+
+                span {
+                    width: 80%;
+                    color: #333333;
+
+                    &:nth-of-type(2) {
+                        width: 10%;
+                    }
+                }
+
+                input[type="checkbox"] {
+                    display: none;
+                }
+
+                label {
+                    width: 10px;
+                    height: 10px;
+                    border: #F5A61C solid 2px;
+                }
+
+                input[type="checkbox"]:checked+label {
+                    background: url("../img/checkLmg.png");
+
+                }
+            }
+
+            ul {
+                width: 100%;
+                bottom: 0;
+                position: absolute;
+
+                li {
+                    background: #FAFAFA;
+                    list-style: none;
+                    width: 100%;
+                    height: 50px;
+                    display: flex;
+                    font-size: 0.8rem;
+                    justify-content: space-between;
+                    align-items: center;
+                    border-bottom: 1px #E0E0E0 solid;
+
+                    p {
+                        width: 80%;
+                        display: flex;
+                        align-items: center;
+                        position: relative;
+                        color: #4D4D4D;
+
+                        input[type="checkbox"] {
+                            display: none;
+                        }
+
+                        label {
+                            display: block;
+                            width: 10px;
+                            height: 10px;
+                            border: #F5A61C solid 2px;
+                            margin-right: 5%;
+
+
+                        }
+
+                        input[type="checkbox"]:checked+label {
+                            background: url("../img/checkLmg.png");
+
+                            span {
+                                width: 105%;
+                                height: 1px;
+                                left: 30px;
+                                right: 0;
+                                bottom: 0;
+                                top: 0;
+                                margin: auto;
+                                border-bottom: #F5A61C solid 1px;
+                                position: absolute;
+                            }
+                        }
+
+                        p {
+                            position: absolute;
+                            width: 86%;
+                            border-bottom: 1px solid #F5A61C;
+                        }
+
+                        &:nth-of-type(2) {
+                            width: 20%;
+                            display: flex;
+                            text-align: right;
+                            align-items: center;
+                            justify-content: flex-end;
+
+                            img {
+                                margin-left: 5%;
+                            }
+                        }
+                    }
+                }
+            }
+
+            &:nth-of-type(2) {
+                ul {
+                    li {
+                        p {
+                            color: #9B9B9B;
+                        }
+                    }
+                }
+            }
+        }
+
+        .on1 {
+            height: 510px;
+        }
+
+        .on2 {
+            height: 153px;
+        }
+    }
+}
+
+#listContent {
+    width: 100%;
+    height: 80%;
+    position: fixed;
+    z-index: 100;
+    bottom: -85%;
+    background: white;
+    box-shadow: 3px 3px 5px 6px #ccc;
+    border-radius: 10px;
+    transition: ease-in-out 0.3s;
+
+    #scrollBar {
+        display: block;
+        width: 20%;
+        height: 2%;
+        background: #E0E0E0;
+        border-radius: 1000px;
+        margin: 5% auto;
+    }
+
+    #inforOff {
+        font-size: 0.9rem;
+        color: #F5A61C;
+        position: absolute;
+        right: 5%;
+        top: 2.2%;
+    }
+
+    #innerChange {
+        width: 100%;
+        border-top: 1px #F7F4F4 solid;
+        padding: 5% 8%;
+        font-size: 1.2rem;
+    }
+
+    #listLmg {
+        width: 84%;
+        display: flex;
+        justify-content: space-between;
+        margin: auto;
+
+        p {
+            width: 45%;
+            display: flex;
+            flex-direction: column;
+
+            img {
+                width: 100%;
+            }
+
+            span {
+                display: block;
+                margin-top: 5%;
+                font-size: 0.8rem;
+            }
+        }
+    }
+}

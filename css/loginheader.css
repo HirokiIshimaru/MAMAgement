@@ -1,0 +1,25 @@
+#headerLogo {
+  width: 100%;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+}
+
+#headerLogo #textLogo {
+  margin: 8% 0;
+  width: 100%;
+  max-width: 298px;
+  max-height: 57px;
+}
+
+#headerLogo #characterLogo {
+  width: 100%;
+  max-width: 299px;
+  max-height: 276px;
+}

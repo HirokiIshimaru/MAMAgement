@@ -1,0 +1,135 @@
+body,
+html {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    font-size: 62.5%;
+}
+
+header {
+    width: 86%;
+    height: 10%;
+    background: #F5A61C;
+    border-radius: 1000px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    margin: 5% auto 0;
+
+    img {
+        width: 30%;
+        max-width: 11px;
+        max-height: 21px;
+    }
+
+    p {
+        width: 70%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        span {
+            width: 100%;
+            font-size: 1.1rem;
+            font-weight: bold;
+            color: white;
+
+            span {
+                font-size: 0.8rem;
+                font-weight: normal;
+            }
+
+            &:nth-of-type(2) {
+                font-size: 0.7rem;
+                text-align: right;
+            }
+        }
+    }
+
+    #bottomArrow {
+        width: 0;
+        height: 0;
+        border-left: 20px solid transparent;
+        border-right: 20px solid transparent;
+        border-top: 35px solid #F5A61C;
+        position: absolute;
+        bottom: -20px;
+        right: 50px;
+
+    }
+}
+
+#mainContentBox {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+
+    #temaText {
+        width: 86%;
+        height: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        margin: 8% auto;
+
+        h2 {
+            font-size: 1.4rem;
+            color: #707070;
+        }
+
+        img {
+            position: absolute;
+            right: 40px;
+        }
+    }
+
+    #foodContentBox {
+        width: 86%;
+        margin: auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        .footBox {
+            width: 45%;
+            display: flex;
+            margin-bottom: 8%;
+
+            a {
+                display: block;
+                width: 100%;
+                text-decoration: none;
+
+                img {
+                    width: 100%;
+                }
+
+                .foodContent {
+                    width: 100%;
+
+                    h3 {
+                        font-size: 0.9rem;
+                        color: #707070;
+                    }
+
+                    p {
+                        color: #BFBFBF;
+                        font-size: 0.8rem;
+                    }
+                }
+            }
+        }
+
+        .hide {
+            display: none;
+        }
+    }
+
+}

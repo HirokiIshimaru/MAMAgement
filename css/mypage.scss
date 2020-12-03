@@ -1,0 +1,89 @@
+body,
+html {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    font-size: 62.5%;
+}
+
+header {
+    width: 100%;
+    height: 8%;
+    background: #F28662;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+    #backPage {
+        position: absolute;
+        left: 3%;
+    }
+
+    h2 {
+        color: white;
+    }
+}
+
+#userInfor {
+    width: 100%;
+    height: 82%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    #userIconName {
+        width: 100%;
+        height: 35%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        p {
+            font-size: 1.1rem;
+            font-weight: bold;
+            margin-top: 3%;
+            color: #080808;
+        }
+
+    }
+
+    ul {
+        width: 100%;
+        height: 65%;
+        display: flex;
+        flex-direction: column;
+
+        li {
+            width: 80%;
+            height: 30%;
+            padding: 0 10%;
+
+            a {
+                width: 100%;
+                height: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                text-decoration: none;
+
+                span {
+                    &:nth-of-type(2) {
+                        width: 65%;
+                        font-size: 0.8rem;
+                        color: #514F64;
+                    }
+
+                    &:nth-of-type(3) {
+                        color: #C2C4C5;
+                        font-size: 0.9rem;
+                    }
+                }
+            }
+        }
+    }
+}

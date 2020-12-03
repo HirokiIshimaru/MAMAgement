@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>MAMA</title>
+    <link rel="stylesheet" href="css/ress.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/listpage.css">
+</head>
+
+<body>
+    <header>
+        <p id="backPage">
+            <a href="">
+                <img src="img/leftArrow.png" alt="戻る">
+            </a>
+        </p>
+        <h2>買い物リスト</h2>
+    </header>
+    <main>
+        <ul id="listBox">
+            <li class="checkList" id="shoppingList">
+                <p class="checkListText">
+                    <input type="checkbox" name="" id="box1">
+                    <label for="box1"></label>
+                    <span>チェックリスト</span>
+                    <span id="shopBtn">9
+                        <img src="img/bottomBtn.png" alt="">
+                    </span>
+
+                </p>
+                <ul>
+                    <li>
+                        <p>
+                            <input type="checkbox" name="" id="box1-1" class="">
+                            <label for="box1-1"></label>
+                            かぼちゃ
+                        </p>
+                        <p>1本<img class="infors" src=" img/inforLmg.png" value="かぼちゃ"></p>
+
+                    </li>
+                    <li>
+                        <p>
+                            <input type="checkbox" name="" id="box1-2" class="">
+                            <label for="box1-2"></label>
+                            牛乳
+                        </p>
+                        <p>1 L<img class="infors" src="img/inforLmg.png" value="牛乳"></p>
+
+                    </li>
+                    <li>
+                        <p>
+                            <input type="checkbox" name="" id="box1-3" class="">
+                            <label for="box1-3"></label>
+                            バター
+                        </p>
+                        <p>1個<img class="infors" src="img/inforLmg.png" value="バター"></p>
+
+                    </li>
+                    <li>
+                        <p>
+                            <input type="checkbox" name="" id="box1-4" class="">
+                            <label for="box1-4"></label>
+                            卵</p>
+                        <p>1個<img class="infors" src="img/inforLmg.png" value="卵"></p>
+
+                    </li>
+                    <li>
+                        <p>
+                            <input type="checkbox" name="" id="box1-5" class="">
+                            <label for="box1-5"></label>
+                            もも肉
+                        </p>
+                        <p>80 g<img class="infors" src="img/inforLmg.png" value="もも肉"></p>
+
+                    </li>
+                    <li>
+                        <p>
+                            <input type="checkbox" name="" id="box1-6" class="">
+                            <label for="box1-6"></label>
+                            玉ねぎ
+                        </p>
+                        <p>1/2個<img class="infors" src="img/inforLmg.png" value="玉ねぎ"></p>
+
+                    </li>
+                    <li>
+                        <p>
+                            <input type="checkbox" name="" id="box1-7" class="">
+                            <label for="box1-7"></label>
+                            ひき肉
+                        </p>
+                        <p>800g<img class="infors" src="img/inforLmg.png" value="ひき肉"></p>
+
+                    </li>
+                    <li>
+                        <p>
+                            <input type="checkbox" name="" id="box1-8" class="">
+                            <label for="box1-8"></label>
+                            かぼちゃ
+                        </p>
+                        <p>1本<img class="infors" src="img/inforLmg.png" value="かぼちゃ"></p>
+
+                    </li>
+                    <li>
+                        <p>
+                            <input type="checkbox" name="" id="box1-9" class="">
+                            <label for="box1-9"></label>
+                            にんにく
+                        </p>
+                        <p>1個<img class="infors" src="img/inforLmg.png" value="にんにく"></p>
+
+                    </li>
+
+                </ul>
+            </li>
+            <li class="checkList" id="shoppingOk">
+                <p class="checkListText">
+                    <input type="checkbox" name="" id="box2" checked>
+                    <label for="box2"></label>
+                    <span>チェック済み</span>
+                    <span id="shopOkBtn">3
+                        <img src="img/bottomBtn.png" alt="">
+                    </span>
+
+                </p>
+                <ul>
+                    <li>
+                        <p>
+                            <input type="checkbox" name="" id="box2-1" class="" checked>
+                            <label for="box2-1"><span></span></label>
+                            卵</p>
+                        <p>1本<img class="infors" src="img/inforLmg.png" value="卵"></p>
+                    </li>
+                    <li>
+                        <p>
+                            <input type="checkbox" name="" id="box2-2" class="" checked>
+                            <label for="box2-2"><span></span></label>
+                            もも肉</span>
+                            <p>80g<img class="infors" src="img/inforLmg.png" value="もも肉"></p>
+                    </li>
+                    <li>
+                        <p>
+                            <input type="checkbox" name="" id="box2-3" class="" checked>
+                            <label for="box2-3"><span></span></label>
+                            玉ねぎ</p>
+                        <p>1/2個<img class="infors" src="img/inforLmg.png" value="玉ねぎ"></p>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </main>
+    <div id="listContent">
+        <span id="scrollBar"></span>
+        <p id="inforOff">閉じる</p>
+        <p id="innerChange">卵 １個</p>
+        <div id="listLmg">
+            <p>
+                <img src="img/kabotya.png" alt="">
+                <span>カボチャスープ</span>
+            </p>
+            <p>
+                <img src="img/hanbaga.png" alt="">
+                <span>ハンバーグ</span>
+            </p>
+        </div>
+
+    </div>
+    <div id="yohaku"></div>
+    <footer>
+        <ul>
+            <li class="recipeNav">
+                <a href="index.php">
+                    <img src="img/recipeLmg.png" alt="">
+                    レシピ
+                </a>
+            </li>
+            <li class="searchNav">
+                <a href="search.php">
+                    <img src="img/searchLmg.png" alt="">
+                    検索
+                </a>
+            </li>
+            <li class="materialNav">
+                <a href="materialpage.php">
+                    <img src="img/metLmg.png" alt="">
+                    材料
+                </a>
+            </li>
+            <li class="listNav">
+                <a href="listpage.html">
+                    <img src="img/listLmg.png" alt="">
+                    リスト
+                </a>
+            </li>
+            <li class="mypageNav">
+                <a href="mypage.html">
+                    <img src="img/mypageLmg.png" alt="">
+                    マイページ
+                </a>
+            </li>
+        </ul>
+    </footer>
+    <script src="js/listpage.js"></script>
+</body>
+
+</html>
